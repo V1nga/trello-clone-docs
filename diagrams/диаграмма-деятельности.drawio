@@ -1,0 +1,208 @@
+<mxfile host="app.diagrams.net" pages="3">
+  <diagram name="Создать доску" id="activity-create-board">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p1_start" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="370" y="20" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_a1" value="Открыть раздел «Мои доски»" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" vertex="1" parent="1">
+          <mxGeometry x="270" y="80" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_a2" value="Ввести название и описание" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" vertex="1" parent="1">
+          <mxGeometry x="270" y="170" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_d1" value="Название пустое?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="260" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_a3" value="Показать ошибку валидации" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" vertex="1" parent="1">
+          <mxGeometry x="560" y="275" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_a4" value="Создать доску, назначить пользователя владельцем" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" vertex="1" parent="1">
+          <mxGeometry x="270" y="380" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_a5" value="Открыть созданную доску" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" vertex="1" parent="1">
+          <mxGeometry x="270" y="480" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_end_outer" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="368" y="570" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_end_inner" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="372" y="574" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="p1_start" target="p1_a1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="p1_a1" target="p1_a2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="p1_a2" target="p1_d1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_e4" value="да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="p1_d1" target="p1_a3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="p1_a3" target="p1_a2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_e6" value="нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="p1_d1" target="p1_a4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="p1_a4" target="p1_a5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="p1_a5" target="p1_end_outer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Пригласить участника" id="activity-invite-member">
+    <mxGraphModel dx="1664" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="950" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p2_start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="370" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_a1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" value="Открыть настройки доски, раздел «Участники»" vertex="1">
+          <mxGeometry height="60" width="220" x="270" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_a2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" value="Ввести email приглашаемого пользователя" vertex="1">
+          <mxGeometry height="50" width="220" x="270" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_d1" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Пользователь найден?" vertex="1">
+          <mxGeometry height="80" width="180" x="290" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_err1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" value="Показать ошибку «пользователь не найден»" vertex="1">
+          <mxGeometry height="60" width="240" x="560" y="371" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_end_err_outer" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="850" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_end_err_inner" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="16" width="16" x="854" y="393" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_d2" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Уже участник?" vertex="1">
+          <mxGeometry height="80" width="200" x="280" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_warn" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" value="Показать предупреждение" vertex="1">
+          <mxGeometry height="60" width="220" x="560" y="491" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_end_warn_outer" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="850" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_end_warn_inner" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="16" width="16" x="854" y="513" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_add" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" value="Добавить пользователя в список участников доски" vertex="1">
+          <mxGeometry height="60" width="220" x="270" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_end_ok_outer" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="368" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_end_ok_inner" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="16" width="16" x="372" y="704" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_e1" edge="1" parent="1" source="p2_start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="p2_a1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_e2" edge="1" parent="1" source="p2_a1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="p2_a2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_e3" edge="1" parent="1" source="p2_a2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_e4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="p2_d1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="320" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_e5" edge="1" parent="1" source="p2_d1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="p2_err1" value="нет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_e6" edge="1" parent="1" source="p2_err1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="401" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_e7" edge="1" parent="1" source="p2_d1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="p2_d2" value="да">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_e8" edge="1" parent="1" source="p2_d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="p2_warn" value="да">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_e9" edge="1" parent="1" source="p2_warn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="521" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_e10" edge="1" parent="1" source="p2_d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="p2_add" value="нет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_e11" edge="1" parent="1" source="p2_add" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="p2_end_ok_outer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uLMlpSxQpliOgZ-g-Qu--1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" value="Проверить права доступа" vertex="1">
+          <mxGeometry height="50" width="220" x="270" y="270" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Создать карточку" id="activity-create-card">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p3_start" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="370" y="20" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_a1" value="Нажать «Добавить карточку» в нужной колонке" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" vertex="1" parent="1">
+          <mxGeometry x="270" y="80" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_a2" value="Ввести название карточки" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" vertex="1" parent="1">
+          <mxGeometry x="270" y="180" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_d1" value="Название пустое?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="270" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_err" value="Показать ошибку валидации" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" vertex="1" parent="1">
+          <mxGeometry x="560" y="285" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_a3" value="Сохранить карточку в конце колонки" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" vertex="1" parent="1">
+          <mxGeometry x="270" y="390" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_end_outer" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="368" y="480" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_end_inner" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="372" y="484" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="p3_start" target="p3_a1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="p3_a1" target="p3_a2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="p3_a2" target="p3_d1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_e4" value="да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="p3_d1" target="p3_err">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="p3_err" target="p3_a2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_e6" value="нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="p3_d1" target="p3_a3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="p3_a3" target="p3_end_outer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
